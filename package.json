@@ -6,8 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out",
+    "export": "next export"
+  
   },
+  "homepage": "https://ellacmd.github.io/login-form/",
+
   "dependencies": {
     "lucide-react": "^0.537.0",
     "next": "15.4.6",
@@ -21,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
