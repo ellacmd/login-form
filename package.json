@@ -2,16 +2,12 @@
   "name": "login-form",
   "version": "0.1.0",
   "private": true,
- "scripts": {
-  "dev": "next dev --turbopack",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d out"
-},
-  "homepage": "https://ellacmd.github.io/login-form/",
-
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "lucide-react": "^0.537.0",
     "next": "15.4.6",
