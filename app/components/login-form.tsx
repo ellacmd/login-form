@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useId } from 'react';
-
 import { FaArrowRight, FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import Field from './field';

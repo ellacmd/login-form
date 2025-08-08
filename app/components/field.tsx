@@ -41,6 +41,7 @@ const Field = ({
 }: FieldProps) => {
     const isInvalid = Boolean(error && touched);
     const errorId = `${id}-error`;
+    
     const computedDescribedBy =
         [describedById, isInvalid ? errorId : undefined]
             .filter(Boolean)

@@ -73,29 +73,6 @@ A responsive email/password sign‑in SPA with accessibility, validation, and mo
     ```
 
 
-
-## SPA Login Form (Email/Password) — Next.js, No UI library, GH Pages
-
-Single-page app with an accessible email/password login form.
-
--   **No UI library**: pure CSS/Tailwind utility classes already in the repo
--   **Accessible fields**: labels associated with inputs, error states with `aria` attributes
--   **Mocked authentication**: `fetch()` is mocked; no real backend required
--   **Static export**: built as a static site and deployed to **GitHub Pages**
-
-### Live demo and sources
-
--   Interface: add your GitHub Pages URL here after first deployment
--   Sources: this repository
-
-### Run locally
-
-```bash
-npm install
-npm run dev
-# open http://localhost:3000
-```
-
 ### Credentials (mock)
 
 -   Email: `demo@example.com`
@@ -105,29 +82,8 @@ npm run dev
 
 The form uses a local `mockFetch` that resolves after 1s. If the credentials match the demo pair above, it returns 200; otherwise 401. See `app/components/login-form.tsx`.
 
-### Build (static export)
 
-```bash
-npm run build
-# output in ./out for GitHub Pages
-```
 
-### Deploy to GitHub Pages
-
-This repo includes a GitHub Actions workflow at `.github/workflows/gh-pages.yml` that:
-
--   Builds the site with `NEXT_PUBLIC_BASE_PATH=/<repo>` for correct asset paths
--   Uploads the static `out/` artifact
--   Publishes to GitHub Pages
-
-Steps:
-
-1. Push to `main`
-2. In GitHub: Settings → Pages → Build and deployment → Source: GitHub Actions
-3. Wait for the workflow to complete; copy the Pages URL and add it above under “Live demo”
-
-If your repository name is, for example, `login-form`, the final URL will be:
-`https://<your-username>.github.io/login-form/`
 
 ### Notes on accessibility
 
