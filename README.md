@@ -45,10 +45,6 @@ A responsive email/password sign‑in SPA with accessibility, validation, and mo
     - No external services required
     - GitHub Pages–compatible static export
 
-3. **Performance Optimizations**
-    - Minimal re-renders via localized state
-    - Lightweight bundle and static export
-
 
 ## Setup Instructions
 
@@ -76,14 +72,7 @@ A responsive email/password sign‑in SPA with accessibility, validation, and mo
     # open http://localhost:3000
     ```
 
-5. Build for GitHub Pages (static export)
 
-    ```bash
-    npm run build
-    # static output in ./out
-    ```
-
-> Deployment: a GitHub Actions workflow is included at `.github/workflows/gh-pages.yml`. Enable Pages in your repo (Settings → Pages → Source: GitHub Actions). After the first successful run, your site will be available at `https://<your-username>.github.io/<repo-name>/`.
 
 ## SPA Login Form (Email/Password) — Next.js, No UI library, GH Pages
 
